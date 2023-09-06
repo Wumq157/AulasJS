@@ -1,17 +1,14 @@
-
-
-//var num1 = Number(2);
-//var num2 = Number(7);
-
-var soma
-
-function calcularSoma(num1, num2){
 //var numeros = String(num1) + " + " +  String(num2);
-soma = num1 + num2;
-return soma;
 
+const num1 = 1;
+const num2 = 2;
+
+function soma(cu, buceta) {
+    return cu + buceta
 }
-console.log(`Se somar o valor ${num1} com ${num2} teremos: O resultado é:`, calcularSoma(45, 232));
+
+console.log(`A soma de ${num1} e ${num2} resulta em ${soma(num1, num2)}`);
+
 
 //console.log(resultado)
 //console.log(numeros)
