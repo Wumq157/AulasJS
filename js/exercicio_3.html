@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function numeroMaior(){
+        var n1 = parseFloat(window.prompt("Digite o primeiro número:"));
+        var n2 = parseFloat(window.prompt("Digite o segundo número:"));
+        var n3 = parseFloat(window.prompt("Digite o terceiro número:"));
+        
+        if (n1 > n2 && n1 > n3) {
+            window.alert("O primeiro número é o maior: " + n1);
+        } else if (n2 > n3) {
+            window.alert("O segundo número é o maior: " + n2);
+        } else if (n3 > n2) {
+            window.alert("O terceiro número é o maior: " + n3);
+        } else if (n1 === n2 && n2 === n3) {
+            window.alert("Todos os números são iguais a " + n1);
+        } else if (n2 === n3) {
+            window.alert("Apenas o segundo é igual ao terceiro.");
+        } else if (n1 === n2) {
+            window.alert("Apenas o primeiro é igual ao segundo.");
+        } else {
+            window.alert("Apenas o primeiro é igual ao terceiro.");
+        }
+    } 
+        
+    </script>
+</head>
+<body>
+    <h1>Exercicio 3</h1>
+    <button onclick="numeroMaior()">Apresentar o maior número</button>
+</body>
+</html>
