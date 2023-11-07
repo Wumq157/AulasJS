@@ -2,7 +2,21 @@
 body {
     font-family: Arial, sans-serif; /* Define a fonte principal para Arial, com uma fonte de fallback em sans-serif caso Arial não esteja disponível. */
     text-align: center; /* Centraliza o texto no corpo da página. */
-    background-color: #f0f0f0; /* Define a cor de fundo como um tom de cinza claro. */
+    background-image: url("https://cdn.bhdw.net/im/purple-nissan-skyline-gtr-r33-wallpaper-81927_w635.webp");
+    background-size: 100%;
+    color: #fff;
+}
+body .camada {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 33%;
+    right: 33%;
+    z-index: 1;
+}
+body .tudo {
+    z-index: 2;
 }
 
 /* Estiliza o contêiner do tabuleiro */
@@ -24,6 +38,7 @@ body {
     background-color: #eee; /* Define a cor de fundo da célula como um tom de cinza mais claro. */
     cursor: pointer; /* Mostra o cursor como uma mão quando passa por cima da célula. */
     border: 2px solid #333; /* Adiciona uma borda sólida de 2px à volta da célula. */
+    background-color: rgb(166, 0, 207);
 }
 
 /* Estiliza as células quando o cursor passa por cima delas */
@@ -35,4 +50,24 @@ body {
 .message {
     font-size: 24px; /* Define o tamanho da fonte da mensagem como 24px. */
     margin-top: 20px; /* Adiciona uma margem superior de 20px para separar a mensagem do tabuleiro. */
+}
+.botoes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botoes button {
+    background-color: #333; /* Cor azul fria */
+    color: #fff; /* Cor do texto branca */
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3%;
+    border-color: black;
+    border-style: solid;
+}
+
+.botoes button:hover {
+    background-color: #9b59b6; /* Cor roxa no hover */
 }
